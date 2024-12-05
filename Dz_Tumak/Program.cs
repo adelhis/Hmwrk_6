@@ -312,7 +312,7 @@ namespace Domashka
                 Console.WriteLine("Такого количества подъездов не может быть, выставлено значение по умолчанию - 1");
             }
             Console.Write("Введите количество квартир в здании: ");
-            isValid = byte.TryParse(Console.ReadLine(), out byte newNumOfAparts);
+            isValid = ushort.TryParse(Console.ReadLine(), out ushort newNumOfAparts);
             if (isValid)
             {
                 this.numOfAparts = newNumOfAparts;
